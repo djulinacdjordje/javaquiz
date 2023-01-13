@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Greška 500</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" th:href="@{/index}">ONLINE JAVA KVIZ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+<br /><br />
+<div class="container">
+  <div class="row">
+    <h3 class="text-center">Nije Vam dozvoljen pritup traženoj stranici ili je došlo do greške na serveru.</h3>
+    <h3 class="text-center">Molimo Vas da se vratite na početnu stranicu.</h3>
+    <a class="btn btn-primary btn-lg" th:href="@{/index}">Početna stranica</a>
+  </div>
+</div>
+
+</body>
+</html>

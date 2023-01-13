@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin meni</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" th:href="@{/logout}">Odjavite se</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+<br /><br />
+<div class="container">
+  <div class="row">
+    <h1 class="text-center">Admin meni</h1>
+    <a class="btn btn-primary btn-lg" th:href="@{/adminmenu/contestants/all}">Prikaz registrovanih učesnika</a>
+    <a class="btn btn-primary btn-lg" th:href="@{/adminmenu/questions/add}">Unos pitanja kviza</a>
+    <a class="btn btn-primary btn-lg" th:href="@{/adminmenu/questions/delete}">Brisanje pitanja kviza</a>
+    <a class="btn btn-primary btn-lg" th:href="@{/adminmenu/contestants/allcorrect}">Ispis učesnika koji su na sva pitanja odgovorili tačno</a>
+    <a class="btn btn-primary btn-lg" th:href="@{/adminmenu/contestants/allanswered}">Ispis učesnika koji su na sva pitanja odgovorili</a>
+    <a class="btn btn-primary btn-lg" th:href="@{/adminmenu/contestants/sortedbyhighscore}">Spisak učesnika uređenih po nerastućoj uspešnosti</a>
+    <a class="btn btn-primary btn-lg" th:href="@{/adminmenu/questions/sortedbypercentageofcorrectanswer}">Spisak pitanja uređenih po nerastućem procentu tačnih odgovora</a>
+    <a class="btn btn-primary btn-lg" th:href="@{/adminmenu/questions/sortedbymostchosenwronganswer}">Spisak pitanja uz prikaz procenta najčešćeg netačnog odgovora i samog odgovora</a>
+  </div>
+</div>
+
+</body>
+</html>
