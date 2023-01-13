@@ -8,7 +8,7 @@ Aplikacija razvijana koristeći:
 
 --MySQL: 8.0.31
 	
-Uputstvo za konekciju sa bazom podataka:
+Uputstvo za kreiranje MySQL baze podataka:
 
 	  username: root
 	  password: root
