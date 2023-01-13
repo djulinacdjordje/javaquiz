@@ -20,7 +20,7 @@ Pokretanje aplikacije:
 1. Direktno iz IDE ili koristeći .jar fajl uz pomoć komande "java -jar <putanja do .jar fajla>"
 2. U veb pretraživaču otvoriti stranicu "localhost:8080"
 3. Za korišćenje aplikacije kao administrator, koristite username: admin i password: admin
-4. Za korišćenje aplikacije kao običan korisnik, koristite username: admin i password: admin, ili napravite novi nalog
+4. Za korišćenje aplikacije kao običan korisnik, koristite username: test i password: test, ili napravite novi nalog
 
 Link za preuzimanje .jar fajla:
    https://drive.google.com/file/d/1Dj3w73yf4fSISGqo1QEdtr-AfREufdDY/view?usp=sharing
