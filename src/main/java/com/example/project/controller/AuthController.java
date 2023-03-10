@@ -2,7 +2,6 @@ package com.example.project.controller;
 
 import com.example.project.constant.Role;
 import com.example.project.model.AppUser;
-import com.example.project.repository.AppUserRepository;
 import com.example.project.service.AppUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
