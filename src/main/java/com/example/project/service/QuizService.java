@@ -8,6 +8,6 @@ public interface QuizService {
 
     String startQuiz(Model model);
 
-    String updateDatabaseAfterAnswerAndContinueQuiz(Long id, Model model, Principal principal);
+    String updateDatabaseAfterAnswerAndContinueQuiz(Long id, Model model, String username);
 
 }

@@ -51,10 +51,10 @@ public class AuthController {
         if(appUser != null){
             if(appUser.getRole() == Role.CONTESTANT){
                 appUserService.updateTimestamp(appUser);
-                return "quizmenu";
+                return "redirect:/quizmenu";
             }
             else if(appUser.getRole() == Role.ADMIN){
-                return "adminmenu";
+                return "redirect:/adminmenu";
             }
         }
         return "";

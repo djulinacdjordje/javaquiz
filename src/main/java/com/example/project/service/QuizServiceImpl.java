@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
-import java.security.Principal;
 import java.util.Optional;
 
 import static com.example.project.constant.QuizConstants.NUMBER_OF_QUESTIONS;
@@ -43,7 +42,7 @@ public class QuizServiceImpl implements QuizService {
     }
 
     @Override
-    public String updateDatabaseAfterAnswerAndContinueQuiz(Long id, Model model, Principal principal) {
+    public String updateDatabaseAfterAnswerAndContinueQuiz(Long id, Model model, String username) {
         Optional<Answer> answers = answerRepository.findById(id);
         quiz.setCurrentQuestion(quiz.getCurrentQuestion() + 1);
         if(answers.isPresent()){
@@ -70,7 +69,7 @@ public class QuizServiceImpl implements QuizService {
             return "";
         }
         if(quiz.getCurrentQuestion() == quiz.getQuestions().size()){
-            AppUser appUser = appUserRepository.findByUsername(principal.getName());
+            AppUser appUser = appUserRepository.findByUsername(username);
             if(quiz.getNumberOfAnswers() == quiz.getCurrentQuestion() && appUser.getAllAnswered() == null){
                 appUser.setAllAnswered(true);
             }

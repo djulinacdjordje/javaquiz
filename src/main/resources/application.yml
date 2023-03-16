@@ -18,3 +18,7 @@ server:
         include-message: always
         whitelabel:
             enabled: true
+
+logging:
+    level:
+        root: info
