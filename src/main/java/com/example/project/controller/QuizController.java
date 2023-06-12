@@ -46,7 +46,7 @@ public class QuizController {
     @GetMapping(path = "/quiz/addanswer/{id}")
     public String updateDatabaseAfterAnswerAndContinueQuiz(@PathVariable(value = "id") Long id, Model model, Principal principal) {
         if(appUserService.findUserByUsername(principal.getName()).getRole() == Role.CONTESTANT){
-            return quizService.updateDatabaseAfterAnswerAndContinueQuiz(id, model, principal);
+            return quizService.updateDatabaseAfterAnswerAndContinueQuiz(id, model, principal.getName());
         }
         return "";
     }
